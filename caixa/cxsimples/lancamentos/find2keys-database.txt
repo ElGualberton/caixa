@@ -1,0 +1,1 @@
+SELECT * FROM cxsimples_lancamentos WHERE cxs_lcto_id = 8 and cxs_lcto_dt = '2017-11-01'

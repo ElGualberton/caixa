@@ -1,0 +1,1 @@
+INSERT INTO cxsimples_lancamentos(cxs_lcto_dt,cxs_lcto_valor,cxs_tipo_id,cxs_lcto_descricao,cxs_lcto_valor_liq,cxs_lcto_dt_prevista,cxs_lcto_id) VALUES ('2017-11-09','70','1','teste do readonly','70.00','2017-11-09','3');

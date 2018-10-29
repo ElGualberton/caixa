@@ -1,0 +1,1 @@
+SELECT * FROM cxsimples_tipo WHERE cxs_tipo_id = 38

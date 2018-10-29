@@ -1,0 +1,1 @@
+INSERT INTO historico(log_email,log_datetime,log_operacao,log_dados) VALUES ('',2017-11-02 21:31:48,'I','');

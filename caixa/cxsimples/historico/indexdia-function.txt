@@ -1,0 +1,13 @@
+SELECT 
+		date_format(a.cxs_lcto_dt,'%d/%m') as cxs_lcto_ddmm, 
+		b.cxs_tipo_entrada as cxs_tipo_entrada, 
+		a.cxs_lcto_valor_liq as cxs_lcto_valor_liq,
+		b.cxs_tipo_descricao as cxs_tipo_descricao,
+		a.cxs_lcto_descricao as cxs_lcto_descricao,
+		a.cxs_lcto_dt as cxs_lcto_dt,
+		a.cxs_lcto_id as cxs_lcto_id
+		from cxsimples_lancamentos as a, cxsimples_tipo as b 
+		where 
+		a.cxs_tipo_id = b.cxs_tipo_id AND
+		a.cxs_lcto_dt_consolidado <> '0000-00-00' 
+		ORDER BY a.cxs_lcto_dt

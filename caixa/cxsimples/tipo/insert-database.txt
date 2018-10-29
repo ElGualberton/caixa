@@ -1,0 +1,1 @@
+INSERT INTO cxsimples_tipo(cxs_tipo_descricao,cxs_tipo_entrada,cxs_tipo_dias,cxs_tipo_indice) VALUES ('ssssss','E','2','3.0');

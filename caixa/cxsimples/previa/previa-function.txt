@@ -1,0 +1,23 @@
+SELECT cxs_lcto_dt_prevista as previsao, ( 
+				(-1 * 
+					( select ifnull(sum(a.cxs_lcto_valor_liq), 0.00) 
+						from 
+						cxsimples_lancamentos as a, 
+						cxsimples_tipo as b 
+						where 
+						a.cxs_lcto_dt_prevista = previsao and 
+						a.cxs_lcto_dt_consolidado = 0 and 
+						a.cxs_tipo_id = b.cxs_tipo_id and 
+						b.cxs_tipo_entrada = 'S' ) 
+				) + 
+					( select ifnull(sum(a.cxs_lcto_valor_liq), 0.00) 
+					from 
+					cxsimples_lancamentos as a, 
+					cxsimples_tipo as b 
+					where 
+					a.cxs_lcto_dt_prevista = previsao and 
+					a.cxs_lcto_dt_consolidado = 0 and 
+					a.cxs_tipo_id = b.cxs_tipo_id and 
+					b.cxs_tipo_entrada = 'E' ) 
+			) as valor from cxsimples_lancamentos WHERE cxs_lcto_dt_consolidado = 0 
+			Group by cxs_lcto_dt_prevista Order by cxs_lcto_dt_prevista

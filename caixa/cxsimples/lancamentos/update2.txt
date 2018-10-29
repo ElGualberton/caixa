@@ -1,0 +1,1 @@
+UPDATE cxsimples_lancamentos SET cxs_lcto_dt='2017-11-01',cxs_lcto_id='8',cxs_lcto_valor='180.00',cxs_tipo_id='8',cxs_lcto_descricao='Negativando o caixa',cxs_lcto_valor_liq='190.01',cxs_lcto_dt_prevista='2017-11-09' WHERE cxs_lcto_id =8 AND  cxs_lcto_dt ='2017-11-01';

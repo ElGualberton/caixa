@@ -1,0 +1,1 @@
+SELECT * FROM cxsimples_diario ORDER BY cxs_diario_dt DESC LIMIT 30
