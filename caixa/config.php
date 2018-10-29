@@ -39,7 +39,7 @@ global $sistema;
 $sistema = 'inicio';
 
 global $celwhats;
-$celwhats = '5511952189891';
+$celwhats = '5511999999999';
 
 global $email_user;
 $email_user = 'usuario@email';
