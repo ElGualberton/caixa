@@ -1,18 +1,18 @@
 <?php
 /** Nome do Cliente **/
-define('cli_nome','Bombom');
+define('cli_nome','Teste');
 
 /** o nome do banco de dados **/
 //define('DB_NAME', 'salvum');
-define('DB_NAME', 'bombom');
+define('DB_NAME', 'cliente104');
 
 /** Usuario do banco de dados **/
-define('DB_USER','usersalvum');
-define('DB_USER','root');
+define('DB_USER','salvum104');
+//define('DB_USER','root');
 
 /** Senha do banco de dados **/
-define('DB_PASSWORD','tiasfofinhas');
-define('DB_PASSWORD','');
+define('DB_PASSWORD','arcoiris');
+//define('DB_PASSWORD','');
 
 /** nome do host do MySQL */
 define('DB_HOST', 'localhost');
@@ -23,7 +23,7 @@ if ( !defined('ABSPATH') )
 	
 /** caminho no server para o sistema **/
 if ( !defined('BASEURL') )
-	define('BASEURL', 'http://www.murielinc-salvum.tk/');
+	define('BASEURL', 'http://35.238.214.110/caixa/caixa/');
 //	define('BASEURL', '/cliente-salvum/');
 
 /** caminho do arquivo de banco de dados **/
@@ -45,7 +45,7 @@ global $email_user;
 $email_user = 'usuario@email';
 
 global $empresa;
-$empresa = 'Muriel INC';
+$empresa = 'Salvum Date';
 
 /** Funcoes Comuns do Sistema **/
 define('FUNCOES', ABSPATH . 'inc/funcoes.php');
